@@ -1,0 +1,25 @@
+{
+    "playcanvasScriptTemplate": {
+        "prefix": "scriptTemplate",
+        "body": [
+            "var ${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/} = pc.createScript('${TM_FILENAME_BASE}');",
+            "",
+            "// initialize code called once per entity",
+            "${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/}.prototype.initialize = function() {",
+            "",
+            "}",
+            "",
+            "// update code called every frame",
+            "${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/}.prototype.update = function(dt) {",
+            "",
+            "}",
+            "// swap method called for script hot-reloading",
+            "// inherit your script state here",
+            "// ${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/}.prototype.swap = function(old) { }",
+            "",
+            "// to learn more about script anatomy, please read:",
+            "// https://developer.playcanvas.com/en/user-manual/scripting/"
+        ],
+        "description": "Creates a Playcanvas Script"
+    }
+}

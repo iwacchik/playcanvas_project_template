@@ -1,0 +1,36 @@
+{
+    "playcanvasClassTemplate": {
+        "prefix": "classTemplate",
+        "body": [
+            "/**",
+            "*",
+            "*",
+            "* @class ${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/}",
+            "* @extends {pc.ScriptType}",
+            "*/",
+            "var ${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/} = class extends pc.ScriptType {",
+            "/**",
+            " * PlayCanvas initialize method",
+            " * @memberof ${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/}",
+            " */",
+            "initialize() {}",
+            "/**",
+            " * PlayCanvas update method",
+            " * @param {number} dt",
+            " * @memberof ${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/}",
+            " */",
+            "update(dt) {}",
+            "/**",
+            " * PlayCanvas swap method",
+            " * @param {${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/}} old",
+            " * @memberof ${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/}",
+            " */",
+            "swap(old) {}",
+            "}",
+            "",
+            "pc.registerScript(${TM_FILENAME_BASE/(.)(.*)/${1:/upcase}${2}/},'${TM_FILENAME_BASE}');",
+            ""
+        ],
+        "description": "Creates a Playcanvas Class Script"
+    }
+}

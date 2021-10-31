@@ -1,0 +1,9 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "autoSnippet.snippets": [
+      { "pattern": "**/src/**/*.js", "snippet": "playcanvasScriptTemplate" }
+    ]
+}

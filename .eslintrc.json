@@ -1,0 +1,67 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2020": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true
+      }
+    ]
+  },
+  "globals": {
+    "pc": true,
+    "pcui": true
+  }
+}
+
+// {
+//   "env": {
+//     "browser": true,
+//     "node": true,
+//     "es2020": true
+//   },
+//   "extends": [
+//     "eslint:recommended",
+//     "plugin:@typescript-eslint/recommended",
+//     "plugin:prettier/recommended"
+//   ],
+//   "plugins": [
+//     "@typescript-eslint"
+//   ],
+//   "parser": "@typescript-eslint/parser",
+//   "parserOptions": {
+//     "sourceType": "module"
+//   },
+//   "rules": {
+//     "prettier/prettier": [
+//       "error",
+//       {
+//         "singleQuote": true
+//       }
+//     ]
+//   },
+//   "globals": {
+//     "pc": true,
+//     "pcui": true
+//   }
+// }
+
